@@ -1,20 +1,12 @@
 @import "tailwindcss";
 
-:root {
-  --primary-font: 'Arial', sans-serif;
-  --secondary-font: 'Bolota', sans-serif;
-  --bg-color: #F2F2F2;
-  --main-color: #FF5D01;
-}
+@theme {
+  /* Fonts */
+  --font-primary: Arial, sans-serif;
+  --font-secondary: "Bolota", sans-serif;
 
-body {
-  font-family: var(--primary-font);
-  background-color: var(--bg-color);
+  /* Colors */
+  --color-bg: #F2F2F2;
+  --color-main: #FF5D01;
+  --color-hover: #FFEBE0;
 }
-.font-secondary {
-  font-family: var(--secondary-font);
-}
-.main-color {
-  color: var(--main-color);
-}
-

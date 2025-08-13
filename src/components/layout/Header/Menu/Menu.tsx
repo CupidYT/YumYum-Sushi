@@ -3,6 +3,7 @@ import MenuItem from "./MenuItem";
 
 export default function Menu() {
     const menuItems = [
+        { href: "/shop", label: "Shop" },
         { href: "/promotii", label: "Promoții" },
         { href: "/despre-noi", label: "Despre noi" },
         { href: "/contacte", label: "Contacte" },
@@ -11,7 +12,7 @@ export default function Menu() {
     ];
 
     return (
-        <ul className="flex gap-6">
+        <ul className="flex gap-6 mr-auto pl-6">
             {menuItems.map(({ href, label }) => (
                 <MenuItem key={href} href={href} label={label} />
             ))}

@@ -8,7 +8,7 @@ type Props = { category: { slug: string; name: string; image: string } };
 export default function CategoryCard({ category }: Props) {
     return (
         <Link
-            href={`/c/${category.slug}`}
+            href={`/shop/categories/${category.slug}`}
             className="relative flex flex-col h-full rounded-2xl bg-white p-8 overflow-hidden hover:overflow-visible transition-all duration-500 hover:z-20"
         >
             <h3 className="text-main font-bold mb-3 text-xl">{category.name}</h3>
